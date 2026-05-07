@@ -1,0 +1,87 @@
+/* Estilização geral da página */
+body {
+    /* Define a fonte do texto */
+    font-family: Arial, sans-serif;
+    /* Usa flexbox para centralizar os elementos */
+    display: flex;
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Define altura total da tela */
+    height: 100vh;
+    /* Remove margens padrão do navegador */
+    margin: 0;
+    /* Evita barras de rolagem */
+    overflow: hidden;
+    /* Cor de fundo caso a imagem não carregue */
+    background-color: #f0f0f0;
+    /* Define a imagem de fundo */
+    background-image: url(FundoSite.jpg);
+    /* Evita repetição da imagem */
+    background-repeat: no-repeat;
+    /* Centraliza a imagem */
+    background-position: center;
+    /* Faz a imagem ocupar toda a tela */
+    background-size: cover;
+    /* Mantém o fundo fixo */
+    background-attachment: fixed;
+}
+
+/* Caixa principal do conteúdo */
+.container {
+    /* Centraliza o texto */
+    text-align: center;
+    /* Espaçamento interno */
+    padding: 50px;
+    /* Cor de fundo da caixa */
+    background-color: #afafaf;
+    /* Arredonda as bordas */
+    border-radius: 10px;
+    /* Adiciona sombra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do campo de entrada */
+input {
+    /* Espaçamento interno */
+    padding: 10px;
+    /* Espaço à direita */
+    margin-right: 10px;
+    /* Borda preta */
+    border: 1px solid #000000;
+    /* Bordas arredondadas */
+    border-radius: 5px;
+}
+
+/* Estilo do botão */
+button {
+    /* Espaçamento interno */
+    padding: 10px 20px;
+    /* Cor de fundo */
+    background-color: #5a5a5a;
+    /* Cor do texto */
+    color: rgb(255, 255, 255);
+    /* Remove borda padrão */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 5px;
+    /* Mostra a mãozinha ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    /* Muda a cor do botão */
+    background-color: #a0a0a0;
+    /* Aumenta um pouco o texto */
+    font-size: 15px;
+}
+
+/* Estilo do parágrafo de mensagem */
+p {
+    /* Espaço acima do texto */
+    margin-top: 20px;
+    /* Tamanho da fonte */
+    font-size: 18px;
+}
