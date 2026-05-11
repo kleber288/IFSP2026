@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    /*
+        Faz com que padding e border sejam incluídos na largura/altura total do elemento,
+        evitando que os elementos "transbordem" o layout.
+    */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão de toda a página */
+    background-color: #f4f4f9;
+    /* Cor de fundo de fallback */
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start;
+    /* Alinha o conteúdo ao topo verticalmente */
+    min-height: 100vh;
+    /* Garante que o body ocupa pelo menos 100% da altura da janela */
+    margin: 0;
+    /* Remove a margem padrão do navegador */
+    padding-top: 50px;
+    /* Espaço entre o topo da janela e o conteúdo */
+    box-sizing: border-box;
+    background-image: url(FundoSite.jpg);
+    /* Imagem de fundo personalizada */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita em mosaico */
+    background-size: cover;
+    /* Faz a imagem cobrir todo o fundo, mantendo as proporções */
+}
+
+.container {
+    background-color: #2a3781;
+    /* Cor de fundo azul escura do cartão */
+    padding: 20px;
+    /* Espaçamento interno entre o conteúdo e as bordas do cartão */
+    border-radius: 8px;
+    /* Arredonda os cantos do cartão */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Sombra suave */
+    width: 350px;
+    /* Largura fixa do cartão */
+    text-align: center;
+    /* Centraliza o texto dentro do cartão */
+    margin-top: 150px;
+    /* Afasta o cartão do topo da página */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    /* Sombra final aplicada ao cartão */
+}
+
+h1 {
+    color: #ffffff;
+    /* Título principal em branco para contrastar com o fundo azul */
+    font-size: 24px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+    /* Espaço abaixo da secção de input para separar do resto */
+}
+
+input {
+    padding: 10px;
+    /* Espaço interno do campo de texto */
+    width: 80%;
+    /* O campo ocupa 80% da largura do cartão */
+    border: 1px solid #ccc;
+    /* Borda cinza clara */
+    border-radius: 4px;
+    /* Cantos levemente arredondados */
+    margin-bottom: 10px;
+    /* Espaço entre o input e o botão */
+}
+
+button {
+    padding: 10px 20px;
+    /* Espaçamento interno: 10px vertical, 20px horizontal */
+    background-color: #28a745;
+    /* Cor de fundo verde */
+    color: rgb(255, 255, 255);
+    /* Texto branco */
+    border: none;
+    /* Remove a borda padrão do botão */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    cursor: pointer;
+    /* Mostra o cursor de "mão" ao passar por cima, indicando clicável */
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    /* Sombra para dar profundidade ao botão */
+}
+
+button:hover {
+    background-color: rgb(10, 110, 10);
+    /* Escurece o botão ao passar o rato por cima */
+}
+
+#mensagem {
+    font-weight: bold;
+    /* Texto em negrito para destaque */
+    min-height: 20px;
+    /* Garante que o espaço da mensagem não colapsa quando está vazia,
+       evitando saltos no layout */
+    margin: 15px 0;
+    /* Espaço acima e abaixo da mensagem */
+}
+
+.lista-container {
+    text-align: left;
+    /* Alinha o texto da lista à esquerda */
+    border-top: 1px solid #1829c4;
+    /* Linha divisória azul acima da lista */
+    margin-top: 20px;
+    /* Espaço acima da secção */
+}
+
+.lista-container h2 {
+    font-size: 18px;
+    color: #ffffff;
+    /* Subtítulo em branco */
+}
+
+ul {
+    list-style-type: decimal;
+    /* Exibe os itens da lista numerados*/
+    padding-left: 20px;
+    /* Recuo para a esquerda para alinhar os números */
+}
+
+li {
+    background: #f9f9f9;
+    /* Fundo claro para cada item da lista */
+    margin: 5px 0;
+    /* Espaço entre os itens */
+    padding: 8px;
+    /* Espaçamento interno de cada item */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    border-left: 4px solid #2a28a7;
+    /* Barra azul à esquerda de cada item */
+}

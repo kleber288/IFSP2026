@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Início do documento HTML; lang="pt-BR" indica que o idioma da página é Português do Brasil -->
+<head>
+    <!-- Seção de cabeçalho: contém metadados e ligações a ficheiros externos -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, permitindo acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante que a página se adapta corretamente ao tamanho do ecrã do dispositivo (responsividade) -->
+    <title>Sistema de Bilheteira</title>
+    <!-- Título exibido no separador do navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa o ficheiro de estilos CSS externo (style.css) para formatar a página -->
+</head>
+<body>
+    <!-- Corpo da página: contém todo o conteúdo visível ao utilizador -->
+    <div class="container">
+        <!-- Div principal que agrupa todo o conteúdo; a classe "container" aplica os estilos centrais da caixa -->
+        <h1>Lista da Bilheteira</h1>
+        <!-- Título principal da aplicação, exibido no topo do cartão -->
+        <div class="input-section">
+            <!-- Div que agrupa o campo de entrada e o botão de adição -->
+            <input type="text" id="entrada" placeholder="Digite um nome ou '!' para sair">
+            <!--
+                Campo de texto onde o utilizador digita o nome:
+                - type="text" → aceita texto livre
+                - id="entrada" → identificador único usado pelo JavaScript para capturar o valor
+                - placeholder → texto de ajuda exibido quando o campo está vazio
+            -->
+            <button onclick="ValidarNomes()">Adicionar Nome</button>
+            <!--
+                Botão que, ao ser clicado, chama a função ValidarNomes() do ficheiro script.js
+                O evento onclick é ativado a cada clique do utilizador
+            -->
+        </div>
+        <p id="mensagem"></p>
+        <!--
+            Parágrafo reservado para exibir mensagens de feedback ao utilizador
+            (erros, sucessos, avisos). Começa vazio e é preenchido pelo JavaScript.
+            id="mensagem" permite que o JS localize e altere este elemento.
+        -->
+        <div class="lista-container">
+            <!-- Div que contém a lista de nomes confirmados -->
+
+            <h2>Nomes Confirmados</h2>
+            <!-- Subtítulo da secção da lista -->
+            <ul id="lista">
+                <!-- 
+                    Lista não ordenada (visualmente numerada pelo CSS com list-style-type: decimal)
+                    id="lista" → o JavaScript adiciona dinamicamente elementos <li> aqui
+                    conforme os nomes são validados e inseridos
+                -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!--
+        Importa o ficheiro JavaScript externo (script.js) no final do body.
+        Colocado aqui (e não no <head>) para garantir que todos os elementos HTML
+        já foram carregados antes de o script tentar acedê-los.
+    -->
+</body>
+</html>
